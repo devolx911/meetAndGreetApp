@@ -96,7 +96,7 @@ function displayCeleb(){
                     <h2>${name}</h2>
                     <span>${role}</span>
                     <span>Starting $ ${price}</span>
-                    <a href="t.me/MY_OLX" class="bookingBtn">Book Meet & Greet</a>
+                    <a href="https://t.me/MY_OLX" class="bookingBtn">Book Meet & Greet</a>
                 </div>
         `
     }).join(" "))
