@@ -1,0 +1,299 @@
+/* general style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+}
+p{
+    font-size: 1.7rem;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+span{
+    font-size: 1.4rem;
+}
+.section-p{
+    padding: 4rem 8rem;
+}
+/* -----------header-section----------- */
+header{
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #800080bb 20%, #ff1b41bb 80%);
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+header .brand-logo a{
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+header .brand-logo a span{
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #ffffffc2;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 600;
+}
+header nav ul li a{
+    padding: 0.5rem 1rem;
+}
+header nav ul li a:hover,
+.active{
+    color: #ff002b;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+}
+#close-meanu,#open-meanu{
+    display: none;
+}
+/* ------------hero-section------------- */
+main section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(to right, #ff1b41bb 20%,  #800080bb 80%);
+    background-repeat: no-repeat;
+}
+/* main section .left-section{
+    width: 40%;
+} */
+main section .left-section h1{
+    font-size: 5.2rem;
+    color: #fff;
+}
+main section .left-section h4{
+    font-size: 2.8rem;
+    margin: 3rem 0;
+    color: #fff;
+}
+main section .left-section .cta-btn a{
+    background-color: #fff;
+    color: #000;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid #fff;
+    transition: 0.3s ease;
+}
+main section .left-section .cta-btn a:hover{
+    background-color: transparent;
+    color: #fff;
+}
+main section .left-section .cta-btn a:nth-child(2){
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 2rem;
+}
+main section .left-section .cta-btn a:nth-child(2):hover{
+    background-color: #fff;
+    color: #000;
+}
+main section .right-section{
+    width: 300px;
+}
+main section .right-section .image-container{
+    width: 100%;
+}
+main section .right-section .image-container img{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* ------------feature-section------------ */
+.celebritites-section{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ff1b41bb 20%,  #800080bb 80%);
+}
+form .field-wrapper{
+    display: flex;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.field-wrapper .search{
+    width: 90%;
+    height: 3.5rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.field-wrapper .submitBtn{
+    /* width: 20%; */
+    height: 3.5rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    background-color: #ff1b41bb;
+    text-align: center;
+}
+.celebritites-section .Category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Category .feature h2{
+    color: #fff;
+    font-size: 2rem;
+}
+.Category ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    border: 1px solid #8000803d;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+}
+.celebritites-section .celeb-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    place-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.celeb{
+    width: 250px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.celeb img{
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    object-fit: cover;
+}
+.celeb h2{
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+.celeb span{
+    display: block;
+    margin: 1rem;
+}
+.celeb .bookingBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.7rem;
+    margin: 1rem auto;
+    width: 90%;
+    border-radius: 5px;
+    background-color: #800080bb;
+}
+
+/* media queries start here */
+
+@media (max-width: 49rem) {
+    /* 799px / 16 */
+    html{
+        font-size: 56.25%;
+        /* 9 / 16 = 56.25 */
+    }
+    
+    header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    font-weight: 600;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    height: 100vh;
+    padding: 40px 0px 0px 30px; 
+    transform: translateX(100%);
+    transition: all 0.3s ease-in;
+}
+#close-meanu,#open-meanu{
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    display: initial;
+    cursor: pointer;
+}
+.open{
+    transform: translateX(0%);
+}
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+main section .left-section h1{
+    font-size: 2.8rem;
+    color: #fff;
+}
+main section .left-section .cta-btn a {
+    display: inline-block;
+    text-align: center;
+    margin: 1rem auto;
+}
+.left-section br{
+    content: "";
+    display: none;
+}
+
+.Category ul{
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+header{
+    padding: 2rem 4rem;
+}
+.celebritites-section .celeb-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+    
+}
